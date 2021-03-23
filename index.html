@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="logoefpem.ico">
+    <title>Inicio</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+	<header>
+		<h1>Introducción a CSS</h1>
+	</header>
+	<nav>
+		<ul>
+  			<li><a class="active" href="index.html">Inicio</a></li>
+  			<li><a href="estructura.html">Estructura de CSS</a></li>
+  			<li><a href="ejemplos.html">Ejemplos</a></li>
+		</ul>
+	</nav>
+	<section>
+		<article class="css">
+			<h1>CSS</h1>
+			<article class="articulo">
+				<h2>¿Qué es CSS?</h2>
+				<p>El CSS (hojas de estilo en cascada) es un lenguaje que define la apariencia de un documento escrito en un lenguaje de marcado (por ejemplo, HTML).
+
+				Así, a los elementos de la página web creados con HTML se les dará la apariencia que se desee utilizando CSS: colores, espacios entre elementos, tipos de letra, etc. separando de esta forma la estructura de la presentación.</p><br>
+				<h2>¿Para qué sirve?</h2>
+				<p>El código CSS hace la vida más fácil al desarrollador front-end al separar las estructura de un documento HTML de su presentación. Dicho de otro modo el HTML actuaría como es esqueleto de la web, definiendo su estructura básica, y el CSS añadiría toda la capa de personalización sobre el que la web define su aspecto final.
+
+				Siguiendo este fundamento resulta muy fácil para un diseñador web realizar cambios en la apariencia de una web sin afectar de manera dramática a su contenido. El contenido siempre será el mismo, solo cambia como aquello que podemos ver. CSS es fácil de entender y aprender, y nos da un potente control de cómo diseñar los documentos HTML.</p><br>
+				<h2>Siglas CSS</h2>
+				<p>
+				CSS son las siglas de “Cascading Style Sheets” (hojas de estilo en cascada).
+				</article>
+				</p>
+				<article class="articulo">
+				<h2>Breve historia de CSS</h2>
+				<p>				
+				Las hojas de estilos aparecieron poco después que el lenguaje de etiquetas SGML, alrededor del año 1970. Desde la creación de SGML, se observó la necesidad de definir un mecanismo que permitiera aplicar de forma consistente diferentes estilos a los documentos electrónicos.<br><br>
+
+				El gran impulso de los lenguajes de hojas de estilos se produjo con el boom de Internet y el crecimiento exponencial del lenguaje HTML para la creación de documentos electrónicos. La guerra de navegadores y la falta de un estándar para la definición de los estilos dificultaban la creación de documentos con la misma apariencia en diferentes navegadores.<br><br>
+
+				El organismo W3C (World Wide Web Consortium), encargado de crear todos los estándares relacionados con la web, propuso la creación de un lenguaje de hojas de estilos específico para el lenguaje HTML y se presentaron nueve propuestas. Las dos propuestas que se tuvieron en cuenta fueron la CHSS (Cascading HTML Style Sheets) y la SSP (Stream-based Style Sheet Proposal).<br><br>
+
+				La propuesta CHSS fue realizada por Håkon Wium Lie y SSP fue propuesto por Bert Bos. Entre finales de 1994 y 1995 Lie y Bos se unieron para definir un nuevo lenguaje que tomaba lo mejor de cada propuesta y lo llamaron CSS (Cascading Style Sheets).<br><br>
+
+				En 1995, el W3C decidió apostar por el desarrollo y estandarización de CSS y lo añadió a su grupo de trabajo de HTML. A finales de 1996, el W3C publicó la primera recomendación oficial, conocida como "CSS nivel 1".<br><br>
+
+				A principios de 1997, el W3C decide separar los trabajos del grupo de HTML en tres secciones: el grupo de trabajo de HTML, el grupo de trabajo de DOM y el grupo de trabajo de CSS.<br><br>
+
+				El 12 de Mayo de 1998, el grupo de trabajo de CSS publica su segunda recomendación oficial, conocida como "CSS nivel 2". La versión de CSS que utilizan todos los navegadores de hoy en día es CSS 2.1, una revisión de CSS 2 que aún se está elaborando (la última actualización es del 23 de abril de 2009). Al mismo tiempo, la siguiente recomendación de CSS, conocida como "CSS nivel 3", continúa en desarrollo desde 1998 y hasta el momento sólo se han publicado borradores.<br><br>
+
+				La adopción de CSS por parte de los navegadores ha requerido un largo periodo de tiempo. El mismo año que se publicó CSS 1, Microsoft lanzaba su navegador Internet Explorer 3.0, que disponía de un soporte bastante reducido de CSS. El primer navegador con soporte completo de CSS 1 fue la versión para Mac de Internet Explorer 5, que se publicó en el año 2000. Por el momento, ningún navegador tiene soporte completo de CSS 2.1.<br><br>	
+				</p>
+			</article>
+			<article class="articulo">
+				<h2>Formas de Aplicar CSS</h2>
+				<b>- En línea:</b>
+				<p>Está definido dentro de las propias etiquetas HTML.<br>
+				La forma genérica de incluir un estilo en línea (inline) sería:<br><br>
+				< nombre_etiqueta <b>style</b>="<b>propiedad1</b> : <b>valor</b>;  <b>
+				propiedad2</b> : <b>valor</b> ;.....">
+				 
+				</p><br>
+				<b>- Interna:</b>
+				<p>en la sección < head> del mismo documento HTML<br>
+				En este ejemplo lo vemos una hoja interna en una página HTML:<br>
+				<img class="centro" src="images/interna.png" width="350" height="350">
+				</p>
+				<b>- Externa:</b>
+				<p>Se escribe en un archivo diferente al documento HTML<br>
+				En este ejemplo vemos que se hace la referencia a un archivo externo:<br>
+				<img class="centro" src="images/externa.gif" width="350" height="350">	
+				</p>
+			</article>
+			<article class="articulo">
+				<h2>Comentarios en CSS</h2>
+				<p>Al igual que en HTML, podemos incluir comentarios en nuestras hojas de estilo, tanto en las internas que hemos visto ahora, como en las externas que veremos a continuación.<br><br>
+
+				Los comentarios son siempre recomendables para hacer luego más fácil la edición de los estilos en caso de que necesitemos cambiar algo con posterioridad. Nos pueden ayudar a recordar el motivo por el que dimos de alta una determinada regla, o en qué parte de nuestras páginas la utilizamos, o incluso el efecto que se consigue al aplicarla.<br><br>
+				Se pueden colocar en cualquier espacio en blanco que se permita en la hoja de estilos.<br><br>
+				<b>Sintaxis:</b><br><br>					
+				Apertura: /*<br>Cierre: */<br>
+				<br><b>Ejemplo:</b><br><br> /* Este es un ejemplo de comentario */<br>
+				<br>Los comentarios se pueden extender desde una a varias líneas.<br>
+				</p>
+			</article>			
+		</article>
+	</section>
+	<aside>	
+	<img class="derecha" src="images/logousac.png"><img class="izquierda" src="images/logoefpem.png">	
+	</aside>
+    <footer>
+    	<p>Creado por: Axel Xiloj García<br>
+    	Carnét: 200818977</p>
+    </footer>
+</body>
+</html>

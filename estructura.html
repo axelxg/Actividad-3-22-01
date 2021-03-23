@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="logoefpem.ico">
+    <title>Estructura CSS</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+	<header>
+		<h1>Estructura de CSS</h1>
+	</header>
+	<nav>
+		<ul>
+  			<li><a class="active" href="index.html">Inicio</a></li>
+  			<li><a href="estructura.html">Estructura de CSS</a></li>
+  			<li><a href="ejemplos.html">Ejemplos</a></li>
+		</ul>
+	</nav>
+	<section>
+		<article  class="css">
+			<h1>Estructura</h1>
+			<article class="articulo">
+				<h2>Estructura de CSS</h2>
+				<b>Selector:</b>
+				<p>No se puede hablar de CSS sin mencionar los selectores. Un selector es, como determinamos, un elemento de nuestro documento HTML para aplicarle estilo. Si los estilos no se aplican correctamente, es probable que el selector no coincida con lo que crees que debería coincidir.<br><br>
+
+				Cada regla CSS comienza con un selector o una lista de selectores que indican al navegador a qué elemento o elementos deben aplicarse dichas reglas. Todos los siguientes son ejemplos de selectores válidos o listas de selectores.<br><br>
+				<b>Ejemplo:</b><br>
+					<img src="images/selector.png" width="95%">
+				</p><br>
+				<h2>Propiedades y Valores:</h2>
+				<p>En su nivel más básico, el CSS consta de dos componentes básicos:<br><br>
+
+    			<b>Propiedades:</b> Identificadores legibles por los humanos que indican qué características de estilo (por ejemplo, font-size, width, background-color) deseas cambiar.<br><br>
+    			<b>Valores:</b> A cada propiedad especificada se le asigna un valor que indica cómo quieres que cambien esas características de estilo (por ejemplo, lo que quieres que cambie de la fuente, el ancho o el color de fondo).<br><br>
+
+				La siguiente imagen resalta una sola propiedad y valor. El nombre de la propiedad es color y el valor blue.<br><br>
+				<img src="images/valores.png">
+					
+				</p>
+				
+			</article>
+			<article class="articulo">
+				<h2>Tipos de Selectores</h2>
+				<p>Veamos ahora cuáles son los selectores básicos que podemos utilizar en CSS.<br><br>
+
+				<b>- Selector Universal:</b><br>	
+				Sintaxis: * { atributo:valor; }<br>
+
+				Ejemplo:* { color: grey; }/* El estilo se aplicará a todos los elementos de la página*/ <br><br>
+				<b>- Selector Etiqueta:</b>
+				Sintaxis: etiqueta { atributo:valor }<br>
+
+				Ejemplo: p {color: green;}  /* El estilo se aplicará a todos los elementos < p>.*/<br><br>
+				<b>- Selector Clase:</b><br>
+				Sintaxis: etiqueta { atributo:valor }<br>
+
+				Ejemplo: p {color: green;}  /* El estilo se aplicará a todos los elementos < p>.*/<br><br>
+				<b>- Selecetor Identificador:</b><br>
+				El selector identificador utiliza el atributo id para seleccionar un elemento. Solo puede haber un elemento con un id dado en un documento.<br>
+
+				Sintaxis: #id { atributo:valor }<br>
+
+				Ejemplo: #cent {color: blue;} /* El estilo se aplicará al elemento que tenga el id #cent */<br><br>
+				<b>- Selector Descendiente:</b><br>
+				Un elemento es descendiente de otro cuando se encuentra entre las etiquetas de apertura y de cierre del elemento padre. Su sintaxis es: selector1 selector2… slectorN. Siendo el selector N el elemento sobre el que se aplica el estilo.<br>
+
+				selector1 selector2 selectorN{<br>
+    			propiedad: valor;<br>
+				}
+				<br><br>
+				<b>- Combinación de Selecetores:</b><br>
+				La combinación de selectores nos permite dar un estilo a todos los selectores indicados.<br>
+
+				selector1, selector2, selector3{<br>
+    			propiedad: valor;<br>
+				}<br><br>
+				<b>- Selector de hijos:</b><br>
+				Se usa para seleccionar un elemento que es hijo de otro elemento y se indica mediante el signo “mayor que” (>).<br>
+
+				selector1 > selector2{<br>
+    			propiedad: valor;<br>
+				}
+				</p><br>
+			</article>
+			<article class="articulo">
+				<h2>Elementos en Línea</h2>
+				<p>Los elementos en HTML (lenguaje de marcas de hipertexto - Hypertext Markup Language) usualmente son elementos "en línea" o elementos "en bloque". Un elemento en línea ocupa sólo el espacio delimitado por las etiquetas que definen el elemento en línea. El siguiente ejemplo demuestra la influencia de los elementos en línea:<br><br>
+				<b>Ejemplo:</b><br><br>
+				<b>El código en HTML:</b><br>
+				< p>Este < span>span</ span> es un elemento en línea; este fondo se ha coloreado para mostrar el principio y fin de la influencia del elemento en línea< /p><br><br>
+				<b>El código en CSS:</b><br><br>
+				span { background-color: #8ABB55; }<br><br>
+				<b>La salida es:</b><br>
+				<img class="centro" src="images/salida1.png">
+				</p><br>
+				<h2>Elementos en Bloque</h2>
+				<p>Los elementos, en HTML (lenguaje de marcas de hipertexto - Hypertext Markup Language) usualmente son elementos "en bloque" o elementos "en línea". Un elemento en bloque ocupa todo el espacio de su elemento padre (contenedor), creando así un "bloque". Este artículo ayuda a explicar lo que esto significa.<br><br>
+
+				Los navegadores suelen mostrar el elemento a nivel de bloque con un salto de línea antes y después del elemento. El siguiente ejemplo demuestra la influencia elementos en bloque:<br><br>
+				<b>Ejemplo:</b><br><br>
+				<b>El código en HTML:</b><br>
+				< p>Este párrafo es un elemento en bloque; este fondo se ha coloreado para mostrar elemento principal (o padre) del párrafo.</ p>
+				<br><br>
+				<b>El código en CSS:</b><br><br>
+				p { background-color: #8ABB55; }
+				<br><br>
+				<b>La salida es:</b><br>
+				<img class="centro" src="images/salida2.png">
+				</p><br>				
+				</p>
+			</article>
+			<article class="articulo">
+				<h2>Modelo de Cajas</h2>
+				<p>Cada elemento que encontramos dentro de un documento HTML se encuentra contenido en una caja rectangular, la cual cuenta con una serie de propiedades que afectaran el cómo se muestran los elementos.<br><br>
+
+				Al trabajar con un modelo de caja, debemos tener en cuenta que existen dos propiedades principales para definirla, height y width, que definirán el ancho y alto de nuestra caja.<br><br>
+				<img class="centro" src="images/caja1.png"><br><br>				
+				Adicionalmente a estas, tenemos el Margin, Padding y Border que nos brindaran mayor control al momento de organizar los elementos.<br><br>
+				<img class="centro" src="images/caja2.png"><br><br>
+				Si comparamos ambas imágenes, podremos observar que existe una pequeña variación de tamaño entre una y otra, esto es debido a que el padding y el border están agregando 10 píxeles respectivamente a cada lado de nuestra caja, haciendo que el tamaño de esta se incremente en 40 del tamaño original, siendo ahora de 240px width y 140 px en height.<br><br>
+				<img class="centro" src="images/caja3.png"><br><br>
+				También podemos observar que ahora nuestra caja se está separando del borde de la pantalla, esto pasa gracias al marginquien está agregando 10 pixeles por lado, para poder entender mejor veamos la siguiente imagen.<br><br>
+				<img class="centro" src="images/caja4.png"><br>
+				</p><br>
+			</article>
+		</article>
+	</section>
+	<aside>	
+	<img class="derecha" src="images/logousac.png"><img class="izquierda" src="images/logoefpem.png">	
+	</aside>
+    <footer>
+    	<p>Creado por: Axel Xiloj García<br>
+    	Carnét: 200818977</p>
+    </footer>
+</body>
+</html>

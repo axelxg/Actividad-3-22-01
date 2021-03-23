@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="logoefpem.ico">
+    <title>Ejemplos CSS</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+	<header>
+		<h1>Ejemplos de CSS</h1>
+	</header>
+	<nav>
+		<ul>
+  			<li><a class="active" href="index.html">Inicio</a></li>
+  			<li><a href="estructura.html">Estructura de CSS</a></li>
+  			<li><a href="ejemplos.html">Ejemplos</a></li>
+		</ul>
+	</nav>
+	<section>
+		<article class="css">
+			<h1>Ejemplos</h1>
+			<article class="articulo">
+				<h2>Alineación de Texto (Text-align)</h2>
+				<p>A pesar de su nombre, la propiedad text-align no sólo controla la alineación del texto. En realidad, esta propiedad establece la alineación de los contenidos (texto, imágenes) que se encuentran dentro de un elemento de bloque.<br><br>
+
+				El valor inicial de la propiedad text-align depende a su vez del valor de la propiedad direction. Si el texto se escribe de izquierda a derecha (direction: ltr) el valor inicial de text-align es left. Por el contrario, el valor inicial de text-align es right cuando el texto se escribe de izquierda a derecha (direction: rtl).<br><br>
+
+				La propiedad text-align define cuatro valores para alinear los contenidos a la izquierda (left), a la derecha (right), centrados (center) o justificados (justify).<br><br>
+
+				Gracias al siguiente estilo podemos alinear el texto a la izquierda (left), a la derecha (right), al centro (center) o justificarlo (justify). Vamos a ver el código de tres párrafos: uno alineado al centro, otro a la izquierda y otra a la derecha.<br><br>
+				<img class="centro" src="images/ejemplo1.png"><br>
+				La salida es:<br><br>
+				<img class="centro" src="images/ejemplo1.2.png">
+				</p>
+			</article>
+			<article class="articulo">
+					<h2>Formas de colocar color en CSS</h2>
+					<p>
+					<b>Esquemas de colores: </b><br><br>
+					Los esquemas de colores (también llamadas paletas de colores) son combinaciones de varios colores. Los esquemas de colores pueden generarse manualmente o matemáticamente a partir de un color básico y de un círculo cromático.<br><br>
+
+					<b>Círculos cromáticos:</b><br><br>
+					Los círculos cromáticos son círculos en los que cada sector circular tiene un color distinto. Existen distintos círculos cromáticos, en función de la distribución de los colores a lo largo del círculo.<br><br>
+
+					<b>Círculo cromático RGB o HSL:</b><br><br>
+					El círculo cromático RGB es el círculo en el que los colores rojo, verde y azul se encuentran uniformemente distribuidos. Este círculo corresponde también a la representación HSL, en el que el valor del matiz (desde 0 hasta 360) coincide con el ángulo (rojo = 0°, verde = 120° y azul = 240°).<br><br>
+					<img class="centro" src="images/ejemplo2.png"><br><br>
+					<b>Códigos de Colores RGB:</b><br><br>
+
+					Los códigos de colores RGB ya formaban parte de la recomendación CSS 1 (diciembre de 1996).<br><br>
+
+					Las pantallas de ordenador consiguen los colores mezclando tres colores básicos (rojo, verde y azul). Cada color admite 256 niveles de intensidad, lo que hace un total de 256 x 256 x 256 = 16.777.216 colores distintos. Para hacer referencia a un color concreto, basta con indicar las intensidades de cada uno de los tres colores básicos.<br>
+
+					Los códigos RGB se pueden expresar de distintas formas:<br><br>
+					<ol class="b">
+						<li><b>rgb(rojo, verde, azul)</b>, donde rojo, verde y azul son números enteros desde 0 a 255.</li><br>
+						<li><b>rgb(rojo, verde, azul),</b> donde rojo, verde y azul son porcentajes desde 0% hasta 100%.</li><br>
+						<li><b>#RRGGBB</b>, donde RR, GG y BB son números hexadecimales desde 00 hasta FF.</li><br>
+						<li><b>#RGB</b>, donde R, G y B son números hexadecimales desde 0 hasta F (el navegador transforma esos números en números de dos cifras repitiendo el valor, es decir, F se convierte en FF, 6 en 66, etc.</li><br>
+					</ol><br><br>
+
+					Las más utilizadas son la tercera y la primera.<br><br>
+					</p>
+			</article>
+			<article class="articulo">
+				<h2>Borde, tipos de borde y bordes redondeados</h2>
+				<p>Cualquier elemento de una página web puede tener un borde (en inglés, border). En esta lección se comentan las propiedades CSS que permiten definir el borde de un elemento. Se comentan tanto las propiedades CSS 2.1 como algunas propiedades CSS 3. En la CSS 3: Bordes se comentan más propiedades CSS 3 relacionadas con bordes.<br><br><br>
+				<b>La propiedad compuesta "border"</b><br><br>
+				La propiedad compuesta border permite establecer simultáneamente los cuatro bordes (arriba, derecha, abajo e izquierda) de un elemento, definiendo su:<br><br>
+
+				<ol class="b">
+					<li>color (nombre de color o código RGB o el valor transparent)</li><br>
+					<li>grosor (valor absoluto de distancia, o los valores thin (fino), medium (medio) o thick (grueso))</li><br>
+					<li>estilo</li><br>
+				</ol>
+				Las tres características del borde se pueden escribir en cualquier orden.<br><br>
+				<img class="centro" src="images/ejemplo3.png"><br><br>
+				<b>Estilos de bordes:</b><br><br>
+				Los estilos de bordes definidos en CSS 2 son none, hidden, dotted, dashed, solid, double, groove, ridge, inset y outset.<br><br>
+				<img class="centro" src="images/ejemplo4.png">
+				<img class="centro" src="images/ejemplo4.1.png">
+				</p>
+			</article>
+			<article class="articulo">
+				<h2>Sombreado</h2>
+				<p>
+				La sombra del texto te permite establecer una sombra del texto actual detrás de él, pero encima del fondo.<br><br>
+
+				Es fácil de usar como un simple efecto de sombra elegante. Sin embargo, esto es quizás más útil cuando se pone texto en una imagen de fondo que puede tener demasiado contraste.<br><br>
+
+				La sombra del texto se introdujo en CSS 2.0, pero no los implementa, por lo que se eliminó de CSS 2.1 y se coloco en CSS3.<br><br>
+
+				La sintaxis de text-shadow es la siguiente:	<br><br>
+				<img class="centro" src="images/ejemplo5.png"><br><br>
+				Los dos primeros valores especifican la longitud del desplazamiento de la sombra. El primer valor especifica la distancia horizontal y el segundo especifica la distancia vertical de la sombra. El tercer valor especifica el radio de desenfoque y el último valor describe el color de la sombra:<br>
+				<ol class="b">
+					<li>La coordenada X</li><br>
+					<li>La coordenada Y</li><br>
+					<li>El radio de desenfoque</li><br>
+					<li>El color de la sombra</li><br>
+				</ol>
+				El uso de números positivos como los dos primeros valores termina colocando la sombra a la derecha del texto horizontalmente (primer valor) y colocando la sombra debajo del texto verticalmente (segundo valor).<br><br>
+
+				El tercer valor, el radio de desenfoque, es un valor opcional que se puede especificar, pero no es necesario. Es la cantidad de píxeles que se estira el texto lo que causa un efecto borroso. Si no utiliza el tercer valor, se trata como si hubiera especificado un radio de desenfoque de cero.<br><br>
+
+				Veamos un ejemplo:<br>
+				<img class="centro" src="images/ejemplo6.png"><br><br>
+				Al indicar la coordenada x como negativo, la sombra se enfocará hacia la izquierda en caso contrario de un valor positivo se enfocará a la derecha.<br><br>
+				<img class="centro" src="images/ejemplo7.png"><br>
+				</p>
+			</article>
+			<article class="articulo">
+				<h2>Formas de establecer fondos</h2>
+				<p>
+					En esta página se explican las propiedades que se pueden aplicar a los fondos de cualquier elemento de una página web. Algunas de estas propiedades ya formaban parte de la recomendación CSS 2.1 y otras se han introducido en la futura recomendación CSS 3: Fondos y bordes. Aunque actualmente (diciembre de 2019) esta recomendación se encuentra en elaboración, los navegadores aceptan ya estas propiedades, por lo que pueden utilizarse sin problemas.<br><br>
+
+					Cualquier imagen puede utilizarse de imagen de fondo. Para adaptarse a los diferentes tamaños de pantallas y mantener las imágenes lo más pequeñas posibles, si el elemento es mayor que la imagen, las imágenes se suelen repetir. Si la imagen está bien construida, la repetición puede dar un resultado continuo.<br><br>
+					<img class="centro" src="images/ejemplo8.png"><br><br>
+					<b>La propiedad compuesta "background"</b><br><br>
+					La propiedad compuesta background permite definir simultáneamente todas las propiedades relacionadas con el fondo de cualquier elemento: background-color, background-image, background-position, background-size, background-repeat, background-attachment, background-origin y background-clip (explicadas más adelante en esta página).<br><br>
+					<img class="centro" src="images/ejemplo9.png"><br><br>
+					Para evitar ambigüedades, si se especifica la propiedad background-size, inmediatamente antes se debe especificar la propiedad background-position y antes de background-size hay que escribir una barra (/).<br><br>
+					<b>Imágenes de fondos múltiples:</b><br><br>
+					La futura recomendación CSS 3: Fondos y bordes, actualmente (diciembre de 2019) en elaboración, permite definir varias imágenes de fondo en un mismo elemento, simplemente separando entre comas las referencias a cada imagen.<br><br>
+					<img class="centro" src="images/ejemplo10.png"><br><br>
+					<b>Color de fondo: background-color</b><br><br>
+					La propiedad background-color establece el color de fondo de cualquier elemento.<br><br>
+					<img class="centro" src="images/ejemplo11.png"><br><br>
+				</p>
+			</article>
+		</article>
+	</section>
+   <aside>	
+	<img class="derecha" src="images/logousac.png"><img class="izquierda" src="images/logoefpem.png">	
+	</aside>
+    <footer>
+    	<p>Creado por: Axel Xiloj García<br>
+    	Carnét: 200818977</p>
+    </footer> 
+</body>
+</html>
